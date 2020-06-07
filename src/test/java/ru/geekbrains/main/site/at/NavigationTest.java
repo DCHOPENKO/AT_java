@@ -1,12 +1,14 @@
 package ru.geekbrains.main.site.at;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
 
 import java.util.concurrent.TimeUnit;
 
+@Disabled
 public class NavigationTest extends BaseTest {
 
     @Test
