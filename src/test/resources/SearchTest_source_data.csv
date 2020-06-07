@@ -1,0 +1,8 @@
+Item_name, cssSelector
+"Профессии", "ul.search-page-tabs > li > a[data-tab='professions']"
+"Курсы", "ul.search-page-tabs > li > a[data-tab='courses']"
+"Вэбинары", "ul.search-page-tabs > li > a[data-tab='webinars']"
+"Блоги", "ul.search-page-tabs > li > a[data-tab='blogs']"
+"Форумы", "ul.search-page-tabs > li > a[data-tab='forums']"
+"Тесты", "ul.search-page-tabs > li > a[data-tab='tests']"
+"Компании", "ul.search-page-tabs > li > a[data-tab='companies']"
