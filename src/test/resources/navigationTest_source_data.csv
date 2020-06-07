@@ -1,0 +1,7 @@
+String checkHeaderDataVerify, String findElementCssSelector, String checkHeaderElementCssSelector, String checkFooterElementCssSelector
+"Карьера", "nav > a[href='/career']", ".gb-header__title", "nav > a[href='/career']"
+"Тесты", "nav > a[href='/tests']", ".gb-header__title", "nav > a[href='/tests']"
+"Курсы", "nav > a[href='/courses']", ".gb-header__title", "nav > a[href='/courses']"
+"Вебинары", "nav > a[href='/events']", ".gb-header__title", "nav > a[href='/events']"
+"Форум", "nav > a[href='/topics']", ".gb-header__title", "nav > a[href='/events']"
+"Блог", "nav > a[href='/posts']", ".gb-header__title", "nav > a[href='/events']"

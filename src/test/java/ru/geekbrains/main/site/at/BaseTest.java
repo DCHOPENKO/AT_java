@@ -7,13 +7,24 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.concurrent.TimeUnit;
 
-@Disabled
+
 public abstract class BaseTest {
-    protected WebDriver driver;
-    protected final String BASE_URL = "https://geekbrains.ru";
+    protected static WebDriver driver;
+    protected static final String BASE_URL = "https://geekbrains.ru";
+
+    @BeforeAll
+    public static void setUp1() {
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-notifications");
+        options.addArguments("--disable-popup-blocking");
+        driver = new ChromeDriver(options);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+    }
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 
         ChromeOptions options = new ChromeOptions();
@@ -24,7 +35,8 @@ public abstract class BaseTest {
     }
 
     @AfterEach
-    void tearDown() {
+    public void tearDown() {
         driver.quit();
     }
+
 }
